@@ -1,0 +1,19 @@
+@mixin text-preset-1 {
+  font-size: 28px;
+  line-height: 135%;
+}
+
+@mixin text-preset-2 {
+  font-size: 22px;
+  line-height: 135%;
+}
+
+@mixin text-preset-3 {
+  font-size: 16px;
+  line-height: 165%;
+}
+
+@mixin text-preset-4 {
+  font-size: 15px;
+  line-height: 165%;
+}

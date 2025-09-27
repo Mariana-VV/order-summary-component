@@ -1,0 +1,42 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: $blue-100;
+  background-image: url("../../../public/assets/images/background.jpg");
+  background-repeat: no-repeat;
+  @include flex-center;
+  background-size: contain;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: 0;
+}

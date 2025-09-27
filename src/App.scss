@@ -1,0 +1,146 @@
+@use "./styles/globals.scss" as *;
+
+.card {
+  width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 40px 40px -20px rgba(13, 48, 189, 0.15);
+
+  &__image {
+  }
+
+  &__content {
+    padding: 48px;
+    background-color: $white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  &__title {
+    text-align: center;
+    @include text-preset-1;
+    color: $blue-950;
+    font-weight: 900;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    text-align: center;
+    color: $gray;
+    margin-bottom: 16px;
+  }
+
+  &__box {
+    background-color: $blue-50;
+    border-radius: 11px;
+    @include flex-between;
+    padding: 23px 24px;
+    margin-bottom: 32px;
+  }
+
+  &__plan {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__paragraphs {
+    & p:first-child {
+      @include text-preset-3;
+      color: $blue-950;
+      font-weight: 900;
+    }
+
+    & p:last-child {
+      color: $gray;
+    }
+  }
+
+  &__change {
+    @include text-preset-3;
+    color: $blue-700;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+
+  &__change:hover {
+    color: $purple;
+  }
+
+  &__btn {
+    border-radius: 11px;
+    background-color: $blue-700;
+    color: $white;
+    width: 100%;
+    padding: 12px;
+    @include text-preset-3;
+    font-weight: 700;
+    margin-bottom: 32px;
+    box-shadow: 0 20px 20px 0 rgba(56, 42, 225, 0.19);
+  }
+
+  &__btn:hover {
+    background-color: $purple;
+    transition: 0.3s;
+  }
+
+  &__cancel {
+    background: none;
+    margin: 0 auto;
+    @include text-preset-3;
+    color: $gray;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+
+  &__cancel:hover {
+    color: $black;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card {
+    width: 327px;
+    height: 567px;
+
+    &__content {
+      padding: 24px;
+    }
+
+    &__title {
+      @include text-preset-2;
+      margin-bottom: 16px;
+    }
+
+    &__description {
+      @include text-preset-4;
+      margin-bottom: 24px;
+    }
+
+    &__paragraphs {
+      & p:first-child {
+        @include text-preset-4;
+      }
+
+      & p:last-child {
+        @include text-preset-4;
+      }
+    }
+
+    &__change {
+      @include text-preset-4;
+    }
+
+    &__box {
+      padding: 15px 16px;
+      margin-bottom: 24px;
+    }
+
+    &__btn {
+      margin-bottom: 24px;
+    }
+
+    &__cancel {
+      margin-bottom: 24px;
+    }
+  }
+}
