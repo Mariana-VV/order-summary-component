@@ -29,6 +29,7 @@
     text-align: center;
     color: $gray;
     margin-bottom: 16px;
+    width: 354px;
   }
 
   &__box {
@@ -117,6 +118,7 @@
     &__description {
       @include text-preset-4;
       margin-bottom: 24px;
+      width: 263px;
     }
 
     &__paragraphs {
