@@ -5,7 +5,10 @@ function App() {
     <>
       <article className="card">
         <div className="card__image">
-          <img src="../assets/images/hero.png" alt="hero image" />
+          <img
+            src={`${import.meta.env.BASE_URL}/assets/images/hero.png`}
+            alt="hero image"
+          />
         </div>
         <div className="card__content">
           <h1 className="card__title">Order Summary</h1>
@@ -17,7 +20,10 @@ function App() {
             <div className="card__info">
               <div className="card__plan">
                 <div className="card__icon">
-                  <img src="../assets/images/icon.svg" alt="icon" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}/assets/images/icon.svg`}
+                    alt="icon"
+                  />
                 </div>
                 <div className="card__paragraphs">
                   <p>Annual Plan</p>
