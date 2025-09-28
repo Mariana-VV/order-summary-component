@@ -1,13 +1,11 @@
 @use "./styles/globals.scss" as *;
 
 .card {
-  height: 697px;
-  width: 450px;
+  // height: 697px;
+  width: 100%;
+  max-width: 450px;
   border-radius: 20px;
-  box-shadow: 0 40px 40px -20px rgba(13, 48, 189, 0.15);
-
-  &__image {
-  }
+  box-shadow: $main-card-shadow;
 
   &__content {
     height: 477px;
@@ -22,14 +20,15 @@
     @include text-preset-1;
     color: $blue-950;
     font-weight: 900;
-    margin-bottom: 16px;
+    margin-block-end: 16px;
   }
 
   &__description {
     text-align: center;
     color: $gray;
-    margin-bottom: 16px;
-    width: 354px;
+    margin-block-end: 16px;
+    width: 100%;
+    max-width: 354px;
   }
 
   &__box {
@@ -37,7 +36,7 @@
     border-radius: 11px;
     @include flex-between;
     padding: 23px 24px;
-    margin-bottom: 32px;
+    margin-block-end: 32px;
   }
 
   &__plan {
@@ -77,13 +76,13 @@
     padding: 12px;
     @include text-preset-3;
     font-weight: 700;
-    margin-bottom: 32px;
-    box-shadow: 0 20px 20px 0 rgba(56, 42, 225, 0.19);
+    margin-block-end: 32px;
+    box-shadow: $btn-shadow;
+    transition: 0.4s;
   }
 
   &__btn:hover {
     background-color: $purple;
-    transition: 0.3s;
   }
 
   &__cancel {
@@ -102,8 +101,9 @@
 
 @media screen and (max-width: 360px) {
   .card {
-    width: 327px;
-    height: 567px;
+    width: 100%;
+    min-width: 327px;
+    // height: 567px;
 
     &__content {
       height: 407px;
@@ -112,13 +112,14 @@
 
     &__title {
       @include text-preset-2;
-      margin-bottom: 16px;
+      margin-block-end: 16px;
     }
 
     &__description {
       @include text-preset-4;
-      margin-bottom: 24px;
-      width: 263px;
+      margin-block-end: 24px;
+      min-width: 263px;
+      width: 100%;
     }
 
     &__paragraphs {
@@ -137,15 +138,15 @@
 
     &__box {
       padding: 15px 16px;
-      margin-bottom: 24px;
+      margin-block-end: 24px;
     }
 
     &__btn {
-      margin-bottom: 24px;
+      margin-block-end: 24px;
     }
 
     &__cancel {
-      margin-bottom: 24px;
+      margin-block-end: 24px;
     }
   }
 }

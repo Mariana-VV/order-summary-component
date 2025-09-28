@@ -32,13 +32,17 @@ function App() {
               </div>
             </div>
 
-            <a href="#" className="card__change">
+            <button type="button" className="card__change">
               Change
-            </a>
+            </button>
           </div>
 
-          <button className="card__btn">Proceed to Payment</button>
-          <button className="card__cancel">Cancel Order</button>
+          <button type="button" className="card__btn">
+            Proceed to Payment
+          </button>
+          <button type="button" className="card__cancel">
+            Cancel Order
+          </button>
         </div>
       </article>
     </>

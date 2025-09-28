@@ -20,6 +20,7 @@ body {
   background-repeat: no-repeat;
   @include flex-center;
   background-size: contain;
+  background-position: 0 0;
   font-family: "Red Hat Display", sans-serif;
 }
 
