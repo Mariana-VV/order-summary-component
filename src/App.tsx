@@ -2,7 +2,7 @@ import "./App.scss";
 
 function App() {
   return (
-    <>
+    <main>
       <article className="card">
         <div className="card__image">
           <img
@@ -45,7 +45,7 @@ function App() {
           </button>
         </div>
       </article>
-    </>
+    </main>
   );
 }
 
