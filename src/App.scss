@@ -1,14 +1,14 @@
 @use "./styles/globals.scss" as *;
 
 .card {
-  // height: 697px;
+  height: 697px;
   width: 100%;
   max-width: 450px;
   border-radius: 20px;
   box-shadow: $main-card-shadow;
 
   &__content {
-    // height: 477px;
+    height: 477px;
     padding: 48px;
     background-color: $white;
     border-bottom-left-radius: 20px;
@@ -27,8 +27,6 @@
     text-align: center;
     color: $gray;
     margin-block-end: 16px;
-    width: 100%;
-    max-width: 354px;
   }
 
   &__box {
